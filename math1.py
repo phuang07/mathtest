@@ -8,7 +8,7 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "termcolor"])
 
 from termcolor import colored, cprint
 
-num_question = 10 
+num_question = 20 
 min_num = 1
 max_num = 10
 num_correct=0
