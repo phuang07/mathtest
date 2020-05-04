@@ -9,7 +9,7 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "termcolor"])
 
 from termcolor import colored, cprint
 
-num_question = 100 
+num_question = 50 
 min_num = 1
 max_num = 10
 num_correct=0
@@ -19,9 +19,14 @@ start = timeit.default_timer()
 while(num_correct < num_question):
     num1 = random.randint(min_num, max_num)
     num2 = random.randint(min_num, max_num)
-    answer = input(f"{num1} + {num2} = ")
+    
+    while (num1 < num2):
+      num1 = random.randint(min_num, max_num)
+    
+    
+    answer = input(f"{num1} - {num2} = ")
 
-    while(not answer.isnumeric() or float(answer) != num1+num2):
+    while(not answer.isnumeric() or float(answer) != num1 - num2):
         cprint("\u2717 Try again.", "red")
         answer=input()
 
