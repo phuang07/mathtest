@@ -1,18 +1,21 @@
-import random
-import sys 
-import subprocess
-import timeit
+# import random
+# import sys 
+# import subprocess
+# import timeit
 
-# subprocess.check_call([sys.executable, "-m", "pip", "install", "colored"])
-# subprocess.check_call([sys.executable, "-m", "pip", "install", "cprint"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "termcolor"])
 
-from termcolor import colored, cprint
+# # subprocess.check_call([sys.executable, "-m", "pip", "install", "colored"])
+# # subprocess.check_call([sys.executable, "-m", "pip", "install", "cprint"])
+# subprocess.check_call([sys.executable, "-m", "pip", "install", "termcolor"])
 
-num_question = 50
-min_num = 1
-max_num = 10
-num_correct=0
+# from termcolor import colored, cprint
+
+# num_question = 50
+# min_num = 1
+# max_num = 10
+# num_correct=0
+
+
 
 start = timeit.default_timer()
 
